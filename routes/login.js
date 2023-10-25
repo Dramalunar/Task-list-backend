@@ -6,8 +6,8 @@ import LogOut from "../controllers/logOut.js";
 
 const User = Router();
 
-User.post("/login",loginUser)
-User.post("/register",createUser)
-User.post("/logout",validateToken,LogOut)
+User.post("/login", loginUser);
+User.post("/register", createUser);
+User.post("/logout", validateToken, LogOut);
 
 export default User;

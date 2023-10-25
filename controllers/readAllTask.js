@@ -11,7 +11,7 @@ async function allTasks(req, res) {
 
     const findAllTask = await Task.find({ UserId: UserId }).exec();
 
-    res.status(200).json({ findAllTask,UserId });
+    res.status(200).json({ findAllTask, UserId });
   } catch (error) {
     console.error("Hubo un error al encontrar las tareas");
     res.status(404).json({ error: "error al buscar las tareas" });

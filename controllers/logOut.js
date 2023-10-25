@@ -1,5 +1,5 @@
-function LogOut (req,res) {
-    return res.status(200)
+function LogOut(req, res) {
+  res.sendStatus(200);
 }
 
 export default LogOut;

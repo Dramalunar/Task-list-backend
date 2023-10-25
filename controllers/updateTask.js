@@ -10,7 +10,7 @@ async function updateTask(req, res) {
   try {
     await AllTasks.findOneAndUpdate(
       { _id: TaskID },
-      { title: newTitle, description: newdescrip, editMode: false }
+      { title: newTitle, description: newdescrip, editMode: false },
     ).exec();
 
     return res.status(200).end();

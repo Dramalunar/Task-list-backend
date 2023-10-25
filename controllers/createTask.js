@@ -7,7 +7,7 @@ async function createTasks(req, res) {
 
     const UserId = req.UserId;
 
-    const {title, description } = req.body;
+    const { title, description } = req.body;
 
     if (!UserId || !title)
       return res

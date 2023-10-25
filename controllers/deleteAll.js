@@ -2,13 +2,12 @@ import connectDB from "../middlewares/connect-db.js";
 import AllTasks from "../models/Totales-model.js";
 
 async function deletedAll(req, res) {
-
   const UserId = req.UserId;
 
   connectDB();
 
   try {
-    await AllTasks.deleteMany({UserId: UserId}).exec();
+    await AllTasks.deleteMany({ UserId: UserId }).exec();
 
     return res.status(200).end();
   } catch (error) {

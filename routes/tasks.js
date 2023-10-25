@@ -11,13 +11,13 @@ import deletedAll from "../controllers/deleteAll.js";
 
 const tasks = Router();
 
-tasks.post("/task",validateToken,allTasks);
-tasks.post("/create",validateToken,createTasks)
-tasks.put("/update/:id",validateToken,updateTask)
-tasks.put("/editmode/:id",validateToken,editModeTask)
-tasks.delete("/delete/:id",validateToken,deletedTask)
-tasks.delete("/deleteall",validateToken,deletedAll)
-tasks.put("/complete/:id",validateToken,completeTheTask)
-tasks.put("/incomplete/:id",validateToken,incompleteTheTask)
+tasks.post("/task", validateToken, allTasks);
+tasks.post("/create", validateToken, createTasks);
+tasks.put("/update/:id", validateToken, updateTask);
+tasks.put("/editmode/:id", validateToken, editModeTask);
+tasks.delete("/delete/:id", validateToken, deletedTask);
+tasks.delete("/deleteall", validateToken, deletedAll);
+tasks.put("/complete/:id", validateToken, completeTheTask);
+tasks.put("/incomplete/:id", validateToken, incompleteTheTask);
 
 export default tasks;
